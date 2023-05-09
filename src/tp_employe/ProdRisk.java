@@ -8,7 +8,7 @@ public class ProdRisk extends Producteur implements EmpRisk {
 		return super.calculeSalaire()+prime;
 	}
 	public String getProfession() {
-		return "Producteur riks";
+		return "Producteur risk";
 	}
 
 

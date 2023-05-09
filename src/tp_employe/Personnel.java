@@ -2,7 +2,7 @@ package tp_employe;
 import java.util.*;
 public class Personnel {
 	private Employe [] emps;
-	static int cpt=0;
+	private int cpt=0;
 	public Personnel(int n) {
 		emps = new Employe[n];
 	}
@@ -12,7 +12,14 @@ public class Personnel {
 	}
 	public void calculeSalaire() {
 		for(int i=0; i<cpt;i++) {
-			emps[i].calculeSalaire();
+			System.out.println(emps[i].calculeSalaire());
 		}
+	}
+	public double salaireMoyenne() {
+		double somme = 0;
+		for(int i=0; i<cpt;i++) {
+			somme+=emps[i].calculeSalaire();
+		}
+		return somme/cpt;
 	}
 }
