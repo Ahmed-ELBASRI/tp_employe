@@ -6,6 +6,7 @@ public class Producteur extends Employe {
 		super(nom,prenom,age,dateEntreeService);
 		this.NBRP=NBRP;
 	}
+	@Override
 	public float calculeSalaire() {
 		float salaire=(float)(NBRP*5);
 		return salaire;

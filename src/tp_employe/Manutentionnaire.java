@@ -6,6 +6,7 @@ public class Manutentionnaire extends Employe {
 		super(nom,prenom,age,dateEntreeService);
 		this.NBRH=NBRH;
 	}
+	@Override
 	public float calculeSalaire() {
 		float salaire=(float)(NBRH*65);
 		return salaire;

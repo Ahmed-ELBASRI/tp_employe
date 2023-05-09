@@ -2,11 +2,16 @@ package tp_employe;
 import java.util.*;
 public class Personnel {
 	private Employe [] emps;
-	private int cpt=0;
-	public Personnel(int n) {
+	private int cpt;
+	private int n=100;
+	public Personnel() {
 		emps = new Employe[n];
 	}
 	public void ajouterEmploye(Employe e) {
+		if(cpt==n) {
+			System.out.println("out of bound");
+			return;
+		}
 		emps[cpt]=e;
 		cpt++;
 	}
